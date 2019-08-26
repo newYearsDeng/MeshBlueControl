@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <include layout="@layout/activity_toolbar_normal_title"/>
+
+    <RelativeLayout
+        android:background="@color/color_main_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_device_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="我的设备"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_device_add"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:src="@drawable/img_device_add"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="@color/color_main_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_device_del_sure">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:paddingTop="5dp"
+                android:layerType="software"
+                android:scrollbarSize="1px"
+                android:scrollbarThumbVertical="@color/color_little_gray"
+                tools:listitem="@layout/item_device_in_gateway_list"/>
+
+            <ImageView
+                android:id="@+id/tv_empty"
+                android:src="@drawable/img_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:gravity="center"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_device_del_sure"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="25dp"
+            android:background="@drawable/selector_sure_button_del"
+            android:text="删     除"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

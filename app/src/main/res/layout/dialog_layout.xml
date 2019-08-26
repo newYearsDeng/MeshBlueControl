@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="200dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="@drawable/content_background"
+        android:gravity="top">
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_view_0"
+                style="@style/message_texts"
+                android:text="用电量:" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_show_ydl"
+                style="@style/message_texts"
+                tools:text="10.5kWh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_below="@+id/layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_view_1"
+                style="@style/message_texts"
+                android:text="电压:" />
+            <TextView
+                android:id="@+id/tv_show_dy"
+                android:layout_marginLeft="10dp"
+                style="@style/message_texts"
+                tools:text="220V" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_below="@+id/layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_view_2"
+                style="@style/message_texts"
+                android:text="电流:" />
+            <TextView
+                android:id="@+id/tv_show_dl"
+                android:layout_marginLeft="10dp"
+                style="@style/message_texts"
+                tools:text="1.25A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_below="@+id/layout_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_view_3"
+                style="@style/message_texts"
+                android:text="功率:" />
+            <TextView
+                android:id="@+id/tv_show_gl"
+                android:layout_marginLeft="10dp"
+                style="@style/message_texts"
+                tools:text="20W" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_5"
+            android:layout_below="@+id/layout_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_view_4"
+                style="@style/message_texts"
+                android:text="电网频率:" />
+            <TextView
+                android:id="@+id/tv_show_dwpl"
+                android:layout_marginLeft="10dp"
+                style="@style/message_texts"
+                tools:text="50Hz" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_6"
+            android:layout_below="@+id/layout_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_view_5"
+                style="@style/message_texts"
+                android:text="功率因数:" />
+            <TextView
+                android:id="@+id/tv_show_glys"
+                android:layout_marginLeft="10dp"
+                style="@style/message_texts"
+                tools:text="1.0" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

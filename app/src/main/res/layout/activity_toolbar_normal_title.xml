@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_tb_back"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@drawable/image_return" />
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="标题" />
+
+        <TextView
+            android:id="@+id/tv_right_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            tools:text="定义"
+            android:layout_centerVertical="true"
+            android:textColor="#22C99E"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_device_del"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="24dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_delete"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

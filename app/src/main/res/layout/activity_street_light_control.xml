@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_blue">
+
+    <include layout="@layout/activity_toolbar_control_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="230dp">
+        <ImageView
+            android:id="@+id/iv_back_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_back_singlelamp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/province_line_border"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="按钮一"/>
+            <CheckBox
+                android:id="@+id/checkbox_control_one"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:button="@null"
+                android:checked="false"
+                android:background="@drawable/checkbox_open_close_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="按钮二"/>
+            <CheckBox
+                android:id="@+id/checkbox_control_two"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:button="@null"
+                android:checked="false"
+                android:background="@drawable/checkbox_open_close_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="按钮三"/>
+            <CheckBox
+                android:id="@+id/checkbox_control_three"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:button="@null"
+                android:checked="false"
+                android:background="@drawable/checkbox_open_close_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_show"
+            android:visibility="visible"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="按钮四"/>
+            <CheckBox
+                android:id="@+id/checkbox_control_four"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:button="@null"
+                android:checked="false"
+                android:background="@drawable/checkbox_open_close_style" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

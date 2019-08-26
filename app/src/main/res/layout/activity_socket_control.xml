@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_blue">
+
+    <include layout="@layout/activity_toolbar_control_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="230dp">
+        <ImageView
+            android:id="@+id/iv_back_show"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_back_socket"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/color_main_back">
+        <LinearLayout
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_show_ydl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="0.00kWh"/>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用电量(kWh)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_show_dy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="250V"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="电压(V)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_show_dl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="0.00A"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="电流(A)"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/color_main_back">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_show_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="0.00W"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="功率(kW)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_show_dwpl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="50hz"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="电网频率(Hz)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_show_glys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="功率因数"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/province_line_border">
+        <CheckBox
+            android:id="@+id/btn_device_open_close"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:checked="false"
+            android:background="@drawable/selector_sure_checkbox_white"
+            android:text="开     关"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

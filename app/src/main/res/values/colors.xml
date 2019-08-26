@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="color_blue">#0086de</color>
+
+
+    <!--浅灰色-->
+    <color name="color_little_gray">#BFBFBF</color>
+    <!--深灰色-->
+    <color name="color_dark_gray">#383838</color>
+    <!--红色字及红色图标-->
+    <color name="color_red">#F95312</color>
+    <!--版头底色-->
+    <color name="color_head_back">#F0F0F0</color>
+    <!--部分按键及字体颜色-->
+    <color name="color_text_back">#4462A4</color>
+
+    <!--按钮颜色-->
+    <color name="color_login_button">#22C99E</color>
+    <!--界面底色-->
+    <color name="color_main_back">#F5F5F5</color>
+    <!--提示文字颜色-->
+    <color name="color_hide">#A5A5A5</color>
+
+    <!--已完成项目列表颜色-->
+    <color name="color_already">#E6A546</color>
+    <!--未完成项目列表颜色-->
+    <color name="color_noalready">#DC4F4F</color>
+    <!--项目中小区名字列表颜色-->
+    <color name="color_build_color">#9B9B9B</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="province_line_border">#D0D0D0</color>
+
+</resources>
